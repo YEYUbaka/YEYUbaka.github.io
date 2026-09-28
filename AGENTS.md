@@ -11,6 +11,13 @@
 - Python 实践者
 - 关注接口测试、自动化测试、测试工具开发和 AI 应用实践
 
+## 必须展示的核心项目
+
+- `LocalRAG` 必须出现在 Profile README 和个人网站首版精选项目中。
+- 项目链接使用公开仓库：<https://github.com/YEYUbaka/LocalRAG>。
+- 推荐描述聚焦“本地优先的 RAG 个人知识库系统”，可提及 React/Vite、FastAPI、ChromaDB、BM25/RRF 和本地 Embedding/Reranker。
+- 不把尚未完成或未独立验证的评测结果、实验结论写成个人成果；技术描述以当前仓库 README、AGENTS.md 和可核验代码为准。
+
 ## 内容边界
 
 - 只使用 YEYUbaka 已公开的个人资料、仓库 README 和可核验项目事实。

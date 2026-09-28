@@ -10,7 +10,7 @@
 1. 精简并重写 `YEYUbaka/YEYUbaka` 的 Profile README，使内容围绕“AI 专业学生、测试开发方向、Python 实践者”展开。
 2. 新建 `YEYUbaka.github.io` 个人网站，以深色极简科技风展示个人定位、真实项目和学习方向。
 
-两者共享同一套内容事实，但展示深度不同：README 负责快速建立认知，网站负责承载项目卡片和更完整的个人介绍。
+两者共享同一套内容事实，但展示深度不同：README 负责快速建立认知，网站负责承载项目卡片和更完整的个人介绍。`LocalRAG` 是首版必须展示的核心项目，并作为项目列表的第一项。
 
 ## 2. 核心定位
 
@@ -36,7 +36,7 @@ README 采用从定位到行动的六段结构：
 
 1. **Hero**：姓名、英文技术标题、两行简介。
 2. **Focus**：测试开发、Python、AI 应用三个方向。
-3. **Selected Projects**：展示三个真实公开项目，每个项目只保留一句经过仓库 README 核验的描述和仓库链接。
+3. **Selected Projects**：展示三个真实公开项目，每个项目只保留一句经过仓库 README 核验的描述和仓库链接；`LocalRAG` 固定排在第一位。
 4. **Toolkit**：只保留正在使用或明确学习中的技术，按“开发、测试、数据/基础设施”分组。
 5. **Currently**：当前学习重点和合作方向。
 6. **Connect**：GitHub 和确认过的公开联系方式。
@@ -51,13 +51,13 @@ README 采用从定位到行动的六段结构：
 
 ### 3.3 项目内容
 
-首版项目展示从 YEYUbaka 的公开仓库中选择三个有明确 README 或功能描述的项目。当前已核验的优先候选为：
+首版项目展示固定为三个有明确 README 或功能描述的公开项目：
 
+- `LocalRAG`：本地优先的 RAG 个人知识库系统，使用 React/Vite、FastAPI、ChromaDB、本地 Embedding/Reranker，以及向量检索与 BM25/RRF 混合检索。
+- `AI-learning-companion`：基于 FastAPI 与 React 的 AI 个性化学习平台，支持智能学习计划、智能组卷、知识图谱与 AI 问答。
 - `doubanspider`：豆瓣电影信息爬取、数据分析与可视化。
-- `AI-learning-companion`：基于 FastAPI 与 React 的 AI 个性化学习平台。
-- `ImageProcessor`：以仓库实际 README 和代码能力为准，实施前完成描述核验。
 
-如果第三个项目在实施前不具备足够的公开说明，则使用另一个有明确 README 的真实仓库替换；替换只改变项目选择，不改变页面结构和内容边界。
+三个项目的描述只使用对应公开仓库当前可核验的内容，不加入未验证的性能数字或正式实验结论。
 
 ## 4. 个人网站方案
 
@@ -69,7 +69,7 @@ README 采用从定位到行动的六段结构：
 
 1. **Hero**：`YEYUbaka`、测试开发与 AI 的主标题、简短定位、GitHub/项目入口。
 2. **Focus**：测试开发、Python、AI 三个方向的短卡片。
-3. **Selected Projects**：三张项目卡片，显示项目名称、定位、技术关键词和 GitHub 链接。
+3. **Selected Projects**：三张项目卡片，第一张固定为 `LocalRAG`，显示项目名称、定位、技术关键词和 GitHub 链接；没有公开演示地址时不伪造 Demo 按钮。
 4. **Learning Path**：用简短时间线或列表表达接口测试、自动化测试、Python 工程和 AI 实践的当前学习路径。
 5. **Contact**：GitHub、公开邮箱和后续可添加的外部链接。
 6. **Footer**：版权和 GitHub 入口。
@@ -112,7 +112,7 @@ README 采用从定位到行动的六段结构：
 
 1. 用户明确确认的个人定位和联系方式。
 2. YEYUbaka GitHub 公开 Profile 和 Profile README。
-3. 公开项目仓库的 README、代码结构和仓库元数据。
+3. 公开项目仓库的 README、AGENTS.md、代码结构和仓库元数据；其中 `LocalRAG` 使用 <https://github.com/YEYUbaka/LocalRAG> 作为项目入口。
 
 统计图、项目 star 数、仓库数量等动态数据不作为首版核心内容，避免缓存过期或数据服务失效破坏页面。所有项目描述必须能在对应公开仓库中找到依据。
 

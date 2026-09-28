@@ -14,7 +14,7 @@ export function HomePage() {
 
   return (
     <>
-      <section className="hero">
+      <section className="hero" id="top">
         <div className="container">
           <Reveal>
             <div className="hero-head">
@@ -37,7 +37,9 @@ export function HomePage() {
               <span><strong className="mono">Python</strong> 工程</span>
             </p>
             <div className="hero-actions">
-              <a className="hero-btn hero-btn--primary" href="#works">查看作品</a>
+              <button className="hero-btn hero-btn--primary" type="button" onClick={() => document.getElementById('works')?.scrollIntoView({ behavior: 'smooth' })}>
+                查看作品
+              </button>
               <a className="hero-btn hero-btn--ghost" href="https://github.com/YEYUbaka" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
               <Link className="hero-btn hero-btn--ghost" to="/resume">方向 →</Link>
             </div>

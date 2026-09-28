@@ -458,12 +458,12 @@ Run git -C E:\AI_projects\YEYUbaka.github.io add -- E:\AI_projects\YEYUbaka.gith
 - Create: E:\AI_projects\YEYUbaka.github.io\README.md
 
 **Interfaces:**
-- Workflow triggers on pushes to main, runs npm ci and npm run build, uploads dist, and deploys with the official Pages actions.
+- Workflow triggers on pushes to main, runs npm ci and npm run build, uploads dist, and deploys with configure-pages@v5, upload-pages-artifact@v4, and deploy-pages@v4; checkout uses v6 and setup-node uses v5.
 - Project README documents only actual local commands and the YEYUbaka.github.io deployment target.
 
 - [ ] **Step 1: Add the Pages workflow**
 
-The workflow sequence is checkout, setup-node with npm cache, npm ci, npm run build, upload-pages-artifact, and deploy-pages. Permissions are contents: read, pages: write, and id-token: write.
+The workflow sequence is checkout@v6, setup-node@v5 with npm cache, configure-pages@v5, npm ci, npm test, npm run build, upload-pages-artifact@v4, and deploy-pages@v4. Permissions are contents: read, pages: write, and id-token: write; deploy needs the build job and targets the github-pages environment.
 
 - [ ] **Step 2: Document local development and content rules**
 
@@ -474,7 +474,7 @@ README.md includes npm install, npm run dev, npm test, npm run build, states tha
 Run git -C E:\AI_projects\YEYUbaka.github.io diff --check, npm test, npm run build, and:
 
 ~~~powershell
-rg -n "npm ci|npm run build|upload-pages-artifact|deploy-pages|main" E:\AI_projects\YEYUbaka.github.io\.github\workflows\deploy.yml
+rg -n "checkout@v6|setup-node@v5|configure-pages@v5|npm ci|npm test|npm run build|upload-pages-artifact@v4|deploy-pages@v4|main|github-pages" E:\AI_projects\YEYUbaka.github.io\.github\workflows\deploy.yml
 ~~~
 
 Expected: workflow checks find every required command/action and the build/test checks pass.

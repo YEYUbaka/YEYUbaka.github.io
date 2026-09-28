@@ -1,6 +1,8 @@
-.section-header { display: grid; grid-template-columns: 56px 1fr; gap: var(--space-4); align-items: start; margin-bottom: var(--space-7); padding-bottom: var(--space-5); border-bottom: 1px solid var(--border); }
-.section-header-index { padding-top: 6px; color: var(--accent); font-size: 12px; }
-.section-header-title { font-size: clamp(1.8rem, 4vw, 2.8rem); letter-spacing: -0.045em; }
-.section-header-desc { max-width: 620px; margin-top: var(--space-2); color: var(--text-secondary); font-size: 14px; }
+.section-header { display: flex; align-items: baseline; gap: var(--space-4); margin-bottom: var(--space-7); padding-bottom: var(--space-4); border-bottom: 1px solid var(--border); }
+.section-header-index { color: var(--accent); font-size: 13px; font-weight: 500; letter-spacing: 0.1em; }
+.section-header-title { font-size: 1.45rem; letter-spacing: -0.01em; }
+.section-header-desc { max-width: 640px; margin-top: var(--space-2); color: var(--text-secondary); font-size: 15px; }
 
-@media (max-width: 640px) { .section-header { grid-template-columns: 42px 1fr; gap: var(--space-3); } }
+@media (max-width: 640px) {
+  .section-header { align-items: flex-start; gap: var(--space-3); }
+}

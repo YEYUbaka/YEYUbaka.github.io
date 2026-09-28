@@ -5,3 +5,4 @@ dist/
 
 # Local tooling artifacts
 .playwright-mcp/
+.playwright-cli/

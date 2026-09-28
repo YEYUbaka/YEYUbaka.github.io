@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.vite/
+*.tsbuildinfo
+
+# Local tooling artifacts
+.playwright-mcp/
